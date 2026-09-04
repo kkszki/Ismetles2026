@@ -169,6 +169,35 @@ namespace Ismetles2026
             Console.WriteLine(legolcsobb.Ar("diák"));
 
 
+            Console.WriteLine($"A teljes költség diákoknak: {Terv()} Ft");
+
+
+
+        }
+
+        public static int Terv()
+        {
+            int osszeg = 0;
+
+            Console.Write("Hány látnivalót szeretnél? ");
+            int db = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < db; i++)
+            {
+                Console.Write("Látnivaló megnevezése: ");
+                string nev = Console.ReadLine();
+
+                Latnivalo latnivalo = latnivalok
+                    .FirstOrDefault(v => v.Megnevezes == nev);
+
+                if ( latnivalo.Ar("diák") != -1)
+                {
+                    osszeg += latnivalo.Ar("diák");
+                }
+            }
+
+            return osszeg;
+
         }
     }
 }
