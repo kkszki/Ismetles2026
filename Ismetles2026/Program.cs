@@ -150,6 +150,17 @@ namespace Ismetles2026
             Console.WriteLine(latnivalok[0].Nyitvatartas(DateTime.Today));
 
 
+            // 6. feladat
+
+            Latnivalo legdragabb = latnivalok
+    .OrderByDescending(v => v.ArVisszaado())
+    .First();
+
+            Console.WriteLine(legdragabb.Megnevezes);
+            Console.WriteLine(legdragabb.ArVisszaado());
+
+
+
 
         }
     }

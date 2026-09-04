@@ -72,5 +72,11 @@ namespace Ismetles2026.Models
             }
             return $"{nyitvatartas[nap, 0]}-{nyitvatartas[nap, 1]}";
         }
+
+        public int ArVisszaado()
+        {
+            return ar.Values.Max();
+        }
+
     }
 }
