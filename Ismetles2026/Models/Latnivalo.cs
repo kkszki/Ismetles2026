@@ -79,7 +79,8 @@ namespace Ismetles2026.Models
         }
         public string KategoriaMondo()
         {
-            return ar.Keys.All
+            return ar.First(x => x.Value == ar.Values.Max()).Key;
         }
+
     }
 }
