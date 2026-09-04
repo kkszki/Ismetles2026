@@ -59,7 +59,7 @@ namespace Ismetles2026
                 "JPM Múzeum Galéria",
                 "Pécs, Káptalan utca 4."));
 
-            latnivalok.Add(new Latnivalo(new Dictionary<string, int>() { { "teljes árú", 5600 }, { "kedvezményes", 5000 } },
+            latnivalok.Add(new Latnivalo(new Dictionary<string, int>() { { "teljes árú", 5600 }, { "diák", 5000 } },
                 new string[7, 2] {{"9:00", "17:00" },
                       {"9:00", "17:00" },
                       {"9:00", "17:00" },
