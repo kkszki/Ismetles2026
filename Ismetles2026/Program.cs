@@ -145,8 +145,12 @@ namespace Ismetles2026
 
 
             // 5. feladt
-      
 
-    }
+
+            Console.WriteLine(latnivalok[0].Nyitvatartas(DateTime.Today));
+
+
+
+        }
     }
 }
