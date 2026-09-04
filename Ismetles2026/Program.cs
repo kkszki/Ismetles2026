@@ -159,7 +159,14 @@ namespace Ismetles2026
             Console.WriteLine(legdragabb.Megnevezes);
             Console.WriteLine(legdragabb.ArVisszaado());
 
+            //7. feladat
+            Latnivalo legolcsobb = latnivalok
+                .Where(v => v.Ar("diák") != -1)
+                .OrderBy(v => v.Ar("diák"))
+                .First();
 
+            Console.WriteLine(legolcsobb.Megnevezes);
+            Console.WriteLine(legolcsobb.Ar("diák"));
 
 
         }
